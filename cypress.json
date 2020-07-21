@@ -3,5 +3,6 @@
   "integrationFolder": "projects/integration",
   "env": {
     "ASUTKIN": "https://www.asutkin.com"
-  }
+  },
+  "supportFile": "projects/support"
 }

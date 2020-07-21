@@ -13,3 +13,16 @@ context('routes: /', () => {
     cy.url().should('contain', ASUTKIN)
   })
 })
+context('routes: /escursioni', () => {
+  beforeEach(() => {
+    cy.visit(`${ASUTKIN}/escursioni`)
+  })
+
+  it('cy.hash() - get the current URL hash', () => {
+    cy.hash().should('be.empty')
+  })
+
+  it('cy.url() - get the current URL', () => {
+    cy.url().should('contain', `${ASUTKIN}/escursioni`)
+  })
+})

@@ -1,6 +1,6 @@
-const ASUTKIN = 'https://www.asutkin.com'
+const ASUTKIN = Cypress.env('ASUTKIN')
 
-context('/', () => {
+context('routes: /', () => {
   beforeEach(() => {
     cy.visit(ASUTKIN)
   })
@@ -10,6 +10,6 @@ context('/', () => {
   })
 
   it('cy.url() - get the current URL', () => {
-    cy.url().should('eq', ASUTKIN)
+    cy.url().should('contain', ASUTKIN)
   })
 })

@@ -10,6 +10,7 @@ context('actions', () => {
     cy.get('#___gatsby')
       .should('be.visible')
   })
+  
 
   it('hamburger is there', () => {
     cy.get('[class*=styles__MenuItem-]')

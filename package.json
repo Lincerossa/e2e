@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cypress run",
     "start:open": "cypress open",
-    "eslint": "eslint --h"
+    "release": "semantic-release --no-ci"
   },
   "author": "marcello luatti",
   "license": "ISC",
